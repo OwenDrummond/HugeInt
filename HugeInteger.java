@@ -37,13 +37,13 @@ public class HugeInteger extends MyDoublyLinkedList<Integer> {
 	
 	public int compare(HugeInteger hi) {
 		if (this.Sign == hi.Sign && this.Sign == '+') {
-			//1 compare length
+			
 			if (this.Size > hi.Size) {
 				return 1;
 			} else if (this.Sign < hi.Size){
 				return -1;
 			} else {
-			//2 compare from head to tail one by one
+			
 				MyDoubleNode<Integer> thisNode = this.Head;
 				MyDoubleNode<Integer> hiNode = hi.Head;
 				while (thisNode != null) {
